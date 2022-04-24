@@ -1,0 +1,17 @@
+public class ListViewButtonController {
+
+    ApexPages.StandardSetController stdSetController;
+    public ListViewButtonController(ApexPages.StandardSetController stdSetController){
+        this.stdSetController = stdSetController;
+    }
+    
+    public PageReference load(){
+        
+        try{
+         // Some fancy stuff here.
+        } catch(Exception e){
+            System.debug('Exception: ' + e);
+        }
+        return null;
+    }
+}

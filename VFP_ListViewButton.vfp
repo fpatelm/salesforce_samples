@@ -1,0 +1,3 @@
+<apex:page standardController="sObject" extensions="ListViewButtonController" recordSetVar="contacts" action="{!load}">
+
+</apex:page>

@@ -1,0 +1,12 @@
+<apex:page>
+    <script>
+        funtion showToast(){
+            sforce.one.showToast({
+                "title”: “Hello There!!",
+                "message": "I am a toast message being fired from visualforce page",
+                "type": "success” //supported types are error, success, info, warning"
+            });
+        }
+    </script>
+
+</apex:page>

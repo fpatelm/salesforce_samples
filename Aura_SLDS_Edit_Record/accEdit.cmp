@@ -1,0 +1,12 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <aura:attribute name="accountFields" type="Object" />
+    <aura:attribute name="updatedAccount" type="Object" />
+    <force:recordData aura:id="editrecord" fields="Name" recordId="{!v.recordId}" targetRecord="{!v.updatedAccount}"
+        targetFields="{!v.accountFields}" mode="EDIT" />
+    <lightning:card iconName="standard:account" title="Display Account info">
+        <p>
+            <lightning:input title="Account Name" value="{!v.accountFields.Name}" />
+        </p>
+        <lightning:button onclick="{!c.saveAccoount}">Save Account</lightning:button>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,11 @@
+class ContinuationClass{
+
+    // Action method
+    @AuraEnabled(continuation=true cacheable=true)
+    public static Object startRequest() { }
+
+    // Callback method
+    @AuraEnabled(cacheable=true)
+    public static Object processResponse(List<String> labels, Object state) { }
+
+  }

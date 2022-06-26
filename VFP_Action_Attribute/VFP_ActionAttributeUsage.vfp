@@ -1,0 +1,5 @@
+<apex:page action="{!method}">
+    <apex:actionSupport action="{!method}" />
+    <apex:commandButton action="{!method}" />
+    <apex:actionPoller action="{!method}" interval="2"/>
+</apex:page>
